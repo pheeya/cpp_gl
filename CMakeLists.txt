@@ -4,4 +4,5 @@ add_executable(cpp_gl src/main.cpp)
 
 add_subdirectory(thirdparty/glfw)
 add_subdirectory(thirdparty/glad/)
-target_link_libraries(cpp_gl glfw glad)  
+add_subdirectory(thirdparty/spdlog)
+target_link_libraries(cpp_gl glfw glad spdlog)  

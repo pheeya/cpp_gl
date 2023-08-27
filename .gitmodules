@@ -4,3 +4,6 @@
 [submodule "thirdparty/glad"]
 	path = thirdparty/glad
 	url = https://github.com/pheeya/glad_cmake.git
+[submodule "thirdparty/spdlog"]
+	path = thirdparty/spdlog
+	url = https://github.com/gabime/spdlog.git

@@ -1,5 +1,6 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <spdlog/spdlog.h>
 #include <iostream>
 
 const GLuint WIDTH = 800, HEIGHT = 600;
@@ -25,10 +26,11 @@ int main(void)
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
-        std::cout << "failed to initialize gl context" << std::endl;
+        spdlog::critical("failed to initialize gl context");
         return -1;
     }
 
+    spdlog::info("Created window");
     while (!glfwWindowShouldClose(window))
     {
         glfwPollEvents();
