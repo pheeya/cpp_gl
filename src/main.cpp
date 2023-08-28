@@ -5,6 +5,9 @@
 #include <imgui.h>
 #include <backends/imgui_impl_opengl3.h>
 #include <backends/imgui_impl_glfw.h>
+#define STB_IMAGE_IMPLEMENTATION
+#include <stb/stb_image.h>
+
 const GLuint WIDTH = 800, HEIGHT = 600;
 
 void key_callback(GLFWwindow *window, int key, int scancode, int action, int mode)
